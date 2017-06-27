@@ -1,0 +1,111 @@
+/*
+Theme Name: Colégio São José
+Theme URI: http:/colegiosjose.com.br
+Description: Site do Colégio São José
+Author: João Buch
+Author URI: http://github.com/joaoguibune
+Version: 1.0
+ */
+
+.header{
+  position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.header .navbar-custom{
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+
+}
+ .navbar-brand {
+   top: 0;
+   left: 0;
+   position: absolute;
+   z-index:1;
+ }
+ .navbar-custom .navbar-header{
+   position:relative;
+ }
+
+ .navbar-collapse-custom{
+     background-color: rgba(152, 46, 66, 0.5);
+     -webkit-transition: background-color .2s; /* Safari */
+     transition: background-color .2s;
+ }
+ .navbar-collapse-custom:hover{
+     background-color: rgba(152, 46, 66, 1);
+     cursor:pointer;
+     -webkit-transition: background-color .2s; /* Safari */
+     transition: background-color .2s;
+ }
+
+ .navbar-custom .navbar-nav>li>a{
+   color:#fff;
+   text-transform: uppercase;
+ }
+
+ .navbar-custom .navbar-nav>.active>a,  .navbar-custom .navbar-nav>.active>a:hover , .navbar-custom .navbar-nav>li>a:hover{
+   background-color: transparent;
+   font-weight:bold;
+ }
+
+
+
+ /* DEMO example styles for logo image */
+ .navbar-brand {
+   padding: 0px;
+ }
+ .navbar-brand>img {
+  width: 130px;
+   padding: 0px 9px;
+ }
+
+.carousel-indicators .active{
+  background:#982e42;
+}
+
+.carousel-caption{
+  bottom:300px;
+}
+
+.destaques{
+  margin-top:60px;
+}
+
+.destaques i{
+  font-size: 50px;
+  text-align:center;
+  display: block
+}
+.social{
+  background: rgba(0, 0, 0, .5);
+      width: auto;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      left: 20px;
+      top: 200px;
+      padding: 20px;
+      display:flex;
+      flex-direction: column;
+}
+.social .fa{
+  color:#fff;
+  font-size:40px;
+  text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform .2s;
+}
+.social .fa:hover{
+  transform: rotate(-390deg);
+  transition: transform .2s;
+}
+.slider{
+  overflow: hidden;
+  position: relative;
+}
