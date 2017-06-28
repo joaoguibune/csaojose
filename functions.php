@@ -97,7 +97,11 @@ function destaques_registrer(){
         'hierarchical' => false,
         'rewrite' => array('slug'=>'servicos'),
         'menu_position' => 6,
-        'supports' => array('title','thumbnail'),
+        'supports' => array('title','editor','thumbnail'),
       );
     register_post_type('destaques',$args);
 }
+/**************************************
+ * Inclusão custom fields
+ **************************************/
+// include_once('assets/includes/fields.php');

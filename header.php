@@ -9,7 +9,7 @@
 <body>
 
   <div class="header">
-    <nav class="navbar navbar-inverse navbar-custom">
+    <nav class="navbar navbar-default navbar-custom">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -31,7 +31,7 @@
                 'container'         => 'div',
                 'container_class'   => 'navbar-collapse navbar-collapse-custom collapse',
                 'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav navbar-right',
+                'menu_class'        => 'nav navbar-nav navbar-left',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker())
             );

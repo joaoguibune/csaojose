@@ -7,11 +7,15 @@ Author URI: http://github.com/joaoguibune
 Version: 1.0
  */
 
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+
 .header{
-  position: absolute;
+    
     width: 100%;
     z-index: 1;
+    background:#fff;
 }
+
 .header .navbar-custom{
   background-color: transparent;
   border: 0;
@@ -29,26 +33,26 @@ Version: 1.0
    position:relative;
  }
 
- .navbar-collapse-custom{
-     background-color: rgba(152, 46, 66, 0.5);
-     -webkit-transition: background-color .2s; /* Safari */
-     transition: background-color .2s;
- }
- .navbar-collapse-custom:hover{
-     background-color: rgba(152, 46, 66, 1);
-     cursor:pointer;
-     -webkit-transition: background-color .2s; /* Safari */
-     transition: background-color .2s;
- }
+.navbar-collapse-custom{
+
+    padding-left:150px;
+}
+
 
  .navbar-custom .navbar-nav>li>a{
-   color:#fff;
+   color:#982e42;
+   letter-spacing: 1px;
+   font-size:16px;
    text-transform: uppercase;
+   font-family: 'Changa One', cursive;
+
  }
 
  .navbar-custom .navbar-nav>.active>a,  .navbar-custom .navbar-nav>.active>a:hover , .navbar-custom .navbar-nav>li>a:hover{
-   background-color: transparent;
-   font-weight:bold;
+     text-decoration: underline;
+     color:#982e42;
+     background-color: transparent;
+
  }
 
 
@@ -67,24 +71,51 @@ Version: 1.0
 }
 
 .carousel-caption{
-  bottom:300px;
+  bottom:200px;
 }
+
+.carousel-caption h1{
+   font-family: 'Changa One', cursive;
+   font-size:80px;
+   color:#982e42;
+   
+}
+
+@media (max-width: 767px){
+
+.carousel-caption h1{
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.carousel-caption{
+  bottom:20%;
+}
+
+}
+
 
 .destaques{
-  margin-top:60px;
+  position: relative;
+  z-index:3;  
+  margin-top:-50px;
 }
 
-.destaques i{
-  font-size: 50px;
-  text-align:center;
-  display: block
+@media screen and (max-width: 991px) {
+    .destaques{
+      margin-top:10px;
+    }
+    .card{
+      margin-bottom: 10px;
+    }
 }
+
 .social{
-  background: rgba(0, 0, 0, .5);
+  background: rgba(100, 100, 100, .5);
       width: auto;
       height: auto;
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       left: 20px;
       top: 200px;
       padding: 20px;
@@ -108,4 +139,65 @@ Version: 1.0
 .slider{
   overflow: hidden;
   position: relative;
+}
+.slider-overlay{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+54,ffffff+100&1+0,0+54,1+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.card{
+      position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding:0;
+    
+}
+
+.card .card-header{
+      height: 180px;
+      width: 100%;
+      display: block;
+      align-items: center;
+      position: relative;
+      border-bottom:1px solid rgba(0,0,0,.125);;
+      overflow: hidden;
+}
+.card-header .fa{
+  font-size:50px;
+  color:#fff;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 45%;
+}
+.card-header .card-image{
+  background: rgba(0, 0, 0, .5);
+}
+.card .card-content{
+  -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align:center;
+    display: block;
+}
+.carousel-indicators{
+  display:none;
 }
