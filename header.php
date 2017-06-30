@@ -5,6 +5,7 @@
   <title><?php wp_title(); ?></title>
   <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' )?>">
   <?php wp_head(); ?>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" alt="Colégio São José">
+          <a class="navbar-brand" href="#"><img src="<?php bloginfo('template_directory');?>/assets/images/logo.png ?>" alt="Colégio São José">
           </a>
         </div>
         <!--/.nav-collapse -->
