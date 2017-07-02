@@ -1,298 +1,126 @@
-/*
-Theme Name: Colégio São José
-Theme URI: http:/colegiosjose.com.br
-Description: Site do Colégio São José
-Author: João Buch
-Author URI: http://github.com/joaoguibune
-Version: 1.0
- */
-
-@import url('https://fonts.googleapis.com/css?family=Changa+One');
-
-
-.header{
-
-    width: 100%;
-    z-index: 1;
-    background:#fff;
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+/* line 1, assets/scss/atoms/_buttons.scss */
+.btn {
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 4px 6px 4px 6px;
+  width: auto;
 }
 
-.header .navbar-custom{
+/* line 1, assets/scss/atoms/_links.scss */
+.header .navbar ul li.active a, .header .navbar ul li.active:focus, .header .navbar ul a, .header .navbar ul a:hover, .header .navbar ul li.active a:visited, .header .navbar ul li.active:visited:focus, .header .navbar ul a:visited {
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: 150ms;
+  background: inherit;
+}
+
+/* line 12, assets/scss/atoms/_links.scss */
+.header .navbar ul li.active a:hover, .header .navbar ul li.active:hover:focus, .header .navbar ul a:hover {
+  background: inherit;
+  color: #ff3134;
+  text-shadow: none;
+  transition: 150ms;
+}
+
+/* line 1, assets/scss/molecules/_navbar.scss */
+.header {
+  position: absolute;
+  z-index: 1;
+}
+/* line 5, assets/scss/molecules/_navbar.scss */
+.header .navbar {
   background-color: transparent;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-
 }
- .navbar-brand {
-   top: 0;
-   left: 0;
-   position: absolute;
-   z-index:1;
- }
- .navbar-custom .navbar-header{
-   position:relative;
- }
-
-.navbar-collapse-custom{
-
-    padding-left:150px;
+/* line 11, assets/scss/molecules/_navbar.scss */
+.header .navbar .navbar-brand {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
 }
 
-
- .navbar-custom .navbar-nav>li>a{
-   color:#982e42;
-   letter-spacing: 1px;
-   font-size:16px;
-   text-transform: uppercase;
-   font-family: 'Changa One', cursive;
-
- }
-
- .navbar-custom .navbar-nav>.active>a,  .navbar-custom .navbar-nav>.active>a:hover , .navbar-custom .navbar-nav>li>a:hover{
-     text-decoration: underline;
-     color:#982e42;
-     background-color: transparent;
-
- }
-
-
-
- /* DEMO example styles for logo image */
- .navbar-brand {
-   padding: 0px;
- }
- .navbar-brand>img {
-  width: 130px;
-   padding: 0px 9px;
- }
-
-.carousel-indicators .active{
-  background:#982e42;
+/* line 2, assets/scss/molecules/_social.scss */
+.social {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
 }
-
-.carousel-caption{
-  bottom:200px;
-}
-
-.carousel-caption h1{
-   font-family: 'Changa One', cursive;
-   font-size:80px;
-   color:#982e42;
-
-}
-
-.carousel-inner .item{
-
-  overflow: hidden;
-}
-
-@media (max-width: 767px){
-
-.carousel-caption h1{
-    font-size: 36px;
-    line-height: 36px;
-}
-
-.carousel-caption{
-  bottom:20%;
-}
-
-}
-
-
-.destaques{
-  position: relative;
-  z-index:3;
-  margin-top:-50px;
-  margin-bottom:50px;
-}
-
-@media screen and (max-width: 991px) {
-    .destaques{
-      margin-top:10px;
-    }
-    .card{
-      margin-bottom: 10px;
-    }
-}
-
-.social{
-  background: rgba(100, 100, 100, .5);
-      width: auto;
-      height: auto;
-      position: absolute;
-      z-index: 2;
-      left: 20px;
-      top: 200px;
-      padding: 20px;
-      display:flex;
-      flex-direction: column;
-}
-.social .fa{
-  color:#fff;
-  font-size:40px;
+/* line 16, assets/scss/molecules/_social.scss */
+.social .fa {
+  color: #fff;
+  font-size: 40px;
   text-align: center;
-    margin: 10px 0;
-    cursor: pointer;
-    display: inline-block;
-    transform: rotate(0deg);
-    transition: transform .2s;
+  margin: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform .2s;
 }
-.social .fa:hover{
+/* line 25, assets/scss/molecules/_social.scss */
+.social .fa:hover {
   transform: rotate(-390deg);
   transition: transform .2s;
 }
-.slider{
-  overflow: hidden;
+
+/* line 2, assets/scss/organisms/_slider.scss */
+.slider .carousel-indicators {
+  display: none;
+}
+/* line 5, assets/scss/organisms/_slider.scss */
+.slider .carousel {
   position: relative;
 }
-.slider-overlay{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+54,ffffff+100&1+0,0+54,1+100 */
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+/* line 10, assets/scss/organisms/_slider.scss */
+.slider .carousel-caption {
+  position: absolute;
+  top: 50%;
+}
+/* line 13, assets/scss/organisms/_slider.scss */
+.slider .carousel-caption h1 {
+  font-size: 72px;
+}
+/* line 16, assets/scss/organisms/_slider.scss */
+.slider .carousel-caption hr {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+/* line 20, assets/scss/organisms/_slider.scss */
+.slider .carousel-caption p {
+  font-size: 24px;
+}
+/* line 24, assets/scss/organisms/_slider.scss */
+.slider .item {
+  position: relative;
+}
+/* line 27, assets/scss/organisms/_slider.scss */
+.slider .item .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
+  background: linear-gradient(to bottom right, rgba(186, 44, 51, 0.3), rgba(255, 209, 0, 0.3));
 }
 
-.card{
-      position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    padding:0;
-
-}
-
-.card .card-header{
-      height: 180px;
-      width: 100%;
-      display: block;
-      align-items: center;
-      position: relative;
-      border-bottom:1px solid rgba(0,0,0,.125);;
-      overflow: hidden;
-}
-.card-header .fa{
-  font-size:50px;
-  color:#fff;
-  position: absolute;
-  z-index: 1;
-  top: 70px;
-  left: 45%;
-}
-.card-header .card-image{
-  background: rgba(0, 0, 0, .5);
-}
-.card .card-content{
-  -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-    text-align:center;
-    display: block;
-    height:200px;
-}
-.carousel-indicators{
-  display:none;
-}
-
-.bilingue{
-
-
-      background-image: url("assets/images/cambridge.jpeg");
-
-
-
-
-
-  color:#fff
-}
-.parallax{
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
-  height:100vh;
-}
-.parallax .title h1{
-  letter-spacing:2px;
-  text-decoration: underline;
-  font-family: 'Changa One', cursive;
-}
-.parallax .title{
-  text-align: center;
-  padding:  30px 0;
-}
-.bilingue .container-fluid{
-    display:flex;
-    align-items: center;
-
-    background:rgba(0, 126, 255, 0.7);
-}
-
-.container-full-height{
-  display:flex;
-  align-items: center;
-    height:100vh;
-    justify-content: center;
-}
-
-.texto-parallax{
-  font-size:18px;
-  padding: 15px;
-}
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
-.embed-container iframe, .embed-container object,
-.embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-.title-section{
-  background:#fff;
-    font-family: 'Changa One', cursive;
-    color:#982e42;
-    margin-bottom: 50px;
-
-}
-.title-section .row h2 { width:100%; text-align:center; border-bottom: 1px solid rgba(152, 46, 66, 0.2); line-height:0.1em; margin:10px 0 20px; }
-.title-section .row h2 span { background:#fff; padding:0 20px; }
-
-.escola-furacao{
-    background-image: url("assets/images/grass.jpg");
-    background-repeat: repeat !important;
-    background-size:auto;
-    color:#fff;
-    margin-bottom: 0;
-
-}
-.escola-furacao .container-fluid{
-
-    background:rgba(0, 0, 0, 0.5);
-}
-.footer{
-  width: 100%;
-  padding:30px 0;
-  background-color: #424554;
-  color:#fff;
-
-}
-.footer .container{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  -ms-align-items: center;
-  align-items: center;
+/* line 1, assets/scss/templates/_base.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: .25px;
 }

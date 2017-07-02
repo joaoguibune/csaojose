@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i");
+/* line 1, ../scss/atoms/_buttons.scss */
+.btn {
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 4px 6px 4px 6px;
+  width: auto;
+}
+
+/* line 1, ../scss/templates/_base.scss */
+body {
+  font-family: "'Roboto', sans-serif";
+  font-size: 16px;
+}

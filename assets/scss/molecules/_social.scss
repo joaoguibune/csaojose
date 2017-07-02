@@ -1,0 +1,31 @@
+
+.social{
+  	  background-color: rgba(0, 0, 0, 0.6);
+      width: auto;
+      height: auto;
+      position: absolute;
+      z-index: 2;
+      left: 20px;
+      top: 200px;
+      padding: 15px;
+      display:flex;
+      flex-direction: column;
+      border-radius: 16px;
+
+
+	.fa{
+	  color:#fff;
+	  font-size:40px;
+	  text-align: center;
+	    margin: 10px 0;
+	    cursor: pointer;
+	    display: inline-block;
+	    transform: rotate(0deg);
+	    transition: transform .2s;
+	    &:hover{
+		  transform: rotate(-390deg);
+		  transition: transform .2s;
+		}
+	}
+
+}

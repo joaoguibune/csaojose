@@ -30,11 +30,12 @@
 			$cont = 0 ; if($my_slider) : foreach($my_slider as $post) : setup_postdata( $post );
 		 ?>
 		    <div class="item <?php if($cont == 0) echo "active"; ?>">
-		      <div class="slider-overlay"></div>
+		      <div class="overlay"></div>
 		      <?php the_post_thumbnail('full'); ?>
 		      <div class="carousel-caption">
 				<h1 style="color:<?php the_field('cor_do_texto'); ?>"><?php the_field('texto'); ?></h1>
-
+				<hr>
+				<p>Modelo incrivel de  ferrari enzo sensacional meu brother</p>			
 		      </div>
 		    </div>
 	    <?php

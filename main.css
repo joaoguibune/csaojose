@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i");
+/* line 1, assets/scss/atoms/_buttons.scss */
+.btn {
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 4px 6px 4px 6px;
+  width: auto;
+}
+
+/* line 2, assets/scss/molecules/_social.scss */
+.social {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 200px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+/* line 16, assets/scss/molecules/_social.scss */
+.social .fa {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform .2s;
+}
+/* line 25, assets/scss/molecules/_social.scss */
+.social .fa:hover {
+  transform: rotate(-390deg);
+  transition: transform .2s;
+}
+
+/* line 1, assets/scss/templates/_base.scss */
+body {
+  font-family: "'Roboto', sans-serif";
+  font-size: 16px;
+}

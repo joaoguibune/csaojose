@@ -1,0 +1,17 @@
+%link, %link:visited {
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	text-decoration: none;	
+	transition: 150ms;
+	background:inherit;
+}
+
+%link:hover {
+	background:inherit;
+	color: #ff3134;
+	text-shadow: none;
+	transition: 150ms;
+}

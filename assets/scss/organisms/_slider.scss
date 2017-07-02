@@ -1,0 +1,36 @@
+.slider{
+	.carousel-indicators{
+		display: none;
+	}
+	.carousel{
+		position:relative;
+
+	}
+
+	.carousel-caption{
+		position:absolute;
+		top:50%;
+		h1{
+			font-size:72px;
+		}
+		hr{
+			text-shadow:0 1px 2px rgba(0,0,0,.6);
+			width:60%;
+		}
+		p{
+			font-size:24px;
+		}
+	}
+	.item{
+		position:relative;
+
+		.overlay{
+			width:100%;
+			height:100%;
+			position: absolute;
+			background: linear-gradient(to bottom right, rgba(186, 44, 51, 0.3), rgba(255, 209, 0, 0.3));
+		}
+
+	}
+
+}
